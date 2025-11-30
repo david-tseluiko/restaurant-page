@@ -1,3 +1,4 @@
-import { variable } from "./homepage.js";
+import { createHomepage } from "./homepage.js";
 
-console.log(variable);
+createHomepage();
+
