@@ -1,4 +1,4 @@
 import "./style.css";
-import { createHomepage } from "./homepage.js";
+import { createHomepage } from "./pages/home.js";
 
 createHomepage();
