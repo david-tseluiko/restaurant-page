@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ----------------------------------------- */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #14213d;
+    --orange: #fca311;
+    --gray: #e5e5e5;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 18px;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.header {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+.nav-button:hover {
+    margin-bottom: 5px;
+}
+
+/* homepage */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--blue);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    margin-top: 130px;
+    border-radius: 20px;
+}
+
+.homepage-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.homepage-description,
+.homepage-pizza-order {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.homepage-image {
+    width: 300px;
+    border-radius: 10%;
+}
+
+
