@@ -126,7 +126,8 @@ body {
 /* shared properties */
 
 .homepage,
-.menu-page {
+.menu-page,
+.contact-page {
     background-color: var(--blue);
     max-width: 800px;
     margin: 0 auto;
@@ -199,4 +200,17 @@ body {
 
 .menu-description {
     color: #ffffffd2;
+}
+
+/* contact page */
+.contact-page {
+    display: grid;
+    gap: 5px;
+    
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.contact-img {
+    border-radius: 20px;
 }

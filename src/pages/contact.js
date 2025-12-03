@@ -11,7 +11,7 @@ export function createContactpage() {
     const street = createTag(
         "div",
         "content-street",
-        "233 S Wacker Dr, Chicago, IL 60606"
+        "🏠 233 S Wacker Dr, Chicago, IL 60606"
     );
     const img = createTag(["img", pinImg, "Location on the map"], "contact-img");
 
