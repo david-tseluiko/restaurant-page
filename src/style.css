@@ -123,19 +123,24 @@ body {
     margin-bottom: 5px;
 }
 
-/* homepage */
+/* shared properties */
 
+.homepage,
+.menu-page {
+    background-color: var(--blue);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* homepage */
 .homepage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
-    background-color: var(--blue);
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px 15px;
-    border-radius: 20px;
 }
 
 .homepage-title {
@@ -154,4 +159,44 @@ body {
     border-radius: 10%;
 }
 
+/* Menu Page */
+.menu-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
 
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 55, 97, 0.3);
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.menu-item:hover {
+    background-color: rgba(36, 55, 97, 0.5);
+}
+
+.menu-page img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.menu-title {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.menu-description {
+    color: #ffffffd2;
+}
