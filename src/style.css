@@ -119,6 +119,10 @@ body {
     transition: all ease 0.3s;
 }
 
+.nav-button.active {
+    border-bottom: 3px solid var(--white);
+}
+
 .nav-button:hover {
     margin-bottom: 5px;
 }
